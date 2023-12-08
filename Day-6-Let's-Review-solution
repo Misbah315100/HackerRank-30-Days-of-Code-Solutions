@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+T = input()
+for N in range(int(T)):
+    S = input()
+    print(S[::2], S[1::2])
