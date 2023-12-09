@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n = int(input())
+phoneBook = {}
+
+def find(name):
+    if name in phoneBook:
+        return name+"="+phoneBook[name]
+    return "Not found"
+
+for i in range(n):
+    name, cellphone = input().split()
+    phoneBook[name]=cellphone
+    
+while True:
+    try:
+        print(find(input())) 
+    except:
+        break
